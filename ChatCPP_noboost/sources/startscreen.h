@@ -22,6 +22,8 @@ public:
     int userId() const;
     QString userName() const;
 
+    std::shared_ptr<Database> getDatabase() const;
+
 public slots:
     void onLoggedIn(uint userId, QString userName);
     void onRejectedRequested();
